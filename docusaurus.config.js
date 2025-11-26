@@ -91,9 +91,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'package-name',
+        title: packageConfig.packageName,
         logo: {
-          alt: 'package-name',
+          alt: packageConfig.packageName,
           src: 'img/LMC-logo.png',
         },
         items: [
