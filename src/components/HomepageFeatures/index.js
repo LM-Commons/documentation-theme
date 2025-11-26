@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Link from "@docusaurus/Link";
-import packageConfig from "../../../config/index";
+import packageConfig from "../../../config/index.js";
 
 export default function HomepageFeatures() {
   return (
@@ -11,7 +11,7 @@ export default function HomepageFeatures() {
         <div className="row">
             <div className={clsx("col col--8")}>
                 <Heading as="h1">Introduction</Heading>
-                <p>Modify the file </p>
+                <p>Modify the file <code>config/index.js</code> to provide a quick description of the package</p>
                 <Heading as="h2">Support</Heading>
                 <ul>
                     <li>File issues at <Link
