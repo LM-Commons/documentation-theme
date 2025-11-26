@@ -5,13 +5,14 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import packageConfig from "./config/index";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Package name',
-  tagline: 'Package tagline',
+  title: packageConfig.title,
+  tagline: packageConfig.tagline,
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -23,12 +24,12 @@ const config = {
   url: 'https://lm-commons.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/package-name',
+  baseUrl: '/'+packageConfig.packageName,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'lm-commons',
-  projectName: 'project-name', // the repo name (i.e lmc-authentication).
+  projectName: packageConfig.projectName,
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -57,7 +58,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/lm-commons/lmc-authentication/tree/master/docs/',
+              'https://github.com/lm-commons/'+packageConfig.projectName+'/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -68,7 +69,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/lm-commons/package-name/tree/master/docs/',  // replace with link to repo
+            'https://github.com/lm-commons/'+packageConfig.projectName+'/tree/master/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -109,7 +110,7 @@ const config = {
                 position: 'right',
             },
           {
-            href: 'https://github.com/lm-commons/package-repo',
+            href: 'https://github.com/lm-commons/'+packageConfig.projectName,
             label: 'GitHub',
             position: 'right',
           },
