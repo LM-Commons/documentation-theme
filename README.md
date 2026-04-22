@@ -15,6 +15,8 @@ using either `yarn` or `npm`.
 
 ```bash
 $ git clone https://github.com/lm-commons/documentation-theme docs
+# Delete the git history as you will add the files to the git of the project
+$ rm -rf docs/.git 
 
 $ cd docs
 $ yarn
