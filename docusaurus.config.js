@@ -133,7 +133,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/lmc-commons/package-repo',
+                href: `https://github.com/lmc-commons/${packageConfig.packageName}`,
               },
             ],
           },
